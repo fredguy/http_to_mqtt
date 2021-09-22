@@ -56,15 +56,7 @@ function logRequest(req, res, next) {
     next();
 }
 
-function authorizeUser(req, res, next) {
-    if (settings.auth_key && req.body['key'] != settings.auth_key) {
-        console.log('Request is not authorized.');
-        res.sendStatus(401);
-    }
-    else {
-        next();
-    }
-}
+
 
 function checkSingleFileUpload(req, res, next) {
     if (req.query.single) {
