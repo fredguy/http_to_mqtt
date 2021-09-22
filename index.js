@@ -11,7 +11,7 @@ var settings = {
     },
     debug: process.env.DEBUG_MODE || false,
     auth_key: process.env.AUTH_KEY || '',
-    http_port: process.env.PORT || 1884
+    http_port: process.env.PORT || 1885
 }
 
 var mqtt = require('mqtt');
